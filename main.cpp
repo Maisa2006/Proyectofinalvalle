@@ -1,27 +1,43 @@
-#include <vector>
+#include <iostream>
 #include <string>
-#include <memory>
+#include <fstream>
+#include <random>
+#include "Mapa.h"
 #include "json.hpp"
-#include "Criatura.h"
 
 
 using namespace std;
 using json = nlohmann::json;
 
 
-class Centella : public Criatura {
-public:
-    Centella(string nom, int ed, int en) : Criatura(move(nom), ed, en) {}
-    void actuar() override { energia -= 2; edad++; }
-    void moverse() override { energia -= 1; }
-    void reproducirse(vector<shared_ptr<Criatura>>& nuevas) override {
-        if (energia > 10)
-            nuevas.push_back(make_shared<Centella>(nombre + "_hijo", 0, 5));
+int main() {
+    srand(time(nullptr));
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_int_distribution<> dist(3, 8);
+
+    int filas = dist(gen);
+    int columnas = dist(gen);
+
+    cout << "Valle Iridiano de " << filas << "x" << columnas << " nodos\n";
+    Mapa valle(filas, columnas);
+    valle.poblar();
+
+    json historial;
+
+    for (int ciclo = 0; ciclo < 5; ++ciclo) {
+        cout << "\nCiclo " << ciclo + 1 << "\n";
+        valle.simular();
+        valle.mostrar();
+
+        historial["Ciclo " + to_string(ciclo + 1)] = valle.serializar();
     }
-    json serializar() const override {
-        return {{"tipo", "Centella"}, {"nombre", nombre}, {"edad", edad}, {"energia", energia}};
-    }
-};
+
+    ofstream("../valleIridiano.json") << historial.dump(4);
+    cout << "\n Archivo generado: valleIridiano.json\n";
+
+   return 0;
+}
 // TIP See CLion help at <a
 // href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
 //  Also, you can try interactive lessons for CLion by selecting

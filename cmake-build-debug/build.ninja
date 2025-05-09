@@ -79,6 +79,24 @@ build CMakeFiles/Proyectofinalvalle.dir/Albo.cpp.obj: CXX_COMPILER__Proyectofina
   OBJECT_DIR = CMakeFiles\Proyectofinalvalle.dir
   OBJECT_FILE_DIR = CMakeFiles\Proyectofinalvalle.dir
 
+build CMakeFiles/Proyectofinalvalle.dir/Nodo.cpp.obj: CXX_COMPILER__Proyectofinalvalle_unscanned_Debug C$:/Users/Maria$ Isabel/Desktop/CLionProjects/Proyectofinalvalle/Nodo.cpp || cmake_object_order_depends_target_Proyectofinalvalle
+  DEP_FILE = CMakeFiles\Proyectofinalvalle.dir\Nodo.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Proyectofinalvalle.dir
+  OBJECT_FILE_DIR = CMakeFiles\Proyectofinalvalle.dir
+
+build CMakeFiles/Proyectofinalvalle.dir/MutanteAlado.cpp.obj: CXX_COMPILER__Proyectofinalvalle_unscanned_Debug C$:/Users/Maria$ Isabel/Desktop/CLionProjects/Proyectofinalvalle/MutanteAlado.cpp || cmake_object_order_depends_target_Proyectofinalvalle
+  DEP_FILE = CMakeFiles\Proyectofinalvalle.dir\MutanteAlado.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Proyectofinalvalle.dir
+  OBJECT_FILE_DIR = CMakeFiles\Proyectofinalvalle.dir
+
+build CMakeFiles/Proyectofinalvalle.dir/Mutante.cpp.obj: CXX_COMPILER__Proyectofinalvalle_unscanned_Debug C$:/Users/Maria$ Isabel/Desktop/CLionProjects/Proyectofinalvalle/Mutante.cpp || cmake_object_order_depends_target_Proyectofinalvalle
+  DEP_FILE = CMakeFiles\Proyectofinalvalle.dir\Mutante.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Proyectofinalvalle.dir
+  OBJECT_FILE_DIR = CMakeFiles\Proyectofinalvalle.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Proyectofinalvalle
@@ -87,7 +105,7 @@ build CMakeFiles/Proyectofinalvalle.dir/Albo.cpp.obj: CXX_COMPILER__Proyectofina
 #############################################
 # Link the executable Proyectofinalvalle.exe
 
-build Proyectofinalvalle.exe: CXX_EXECUTABLE_LINKER__Proyectofinalvalle_Debug CMakeFiles/Proyectofinalvalle.dir/main.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Criatura.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Centella.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Mapa.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Albo.cpp.obj
+build Proyectofinalvalle.exe: CXX_EXECUTABLE_LINKER__Proyectofinalvalle_Debug CMakeFiles/Proyectofinalvalle.dir/main.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Criatura.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Centella.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Mapa.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Albo.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Nodo.cpp.obj CMakeFiles/Proyectofinalvalle.dir/MutanteAlado.cpp.obj CMakeFiles/Proyectofinalvalle.dir/Mutante.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Proyectofinalvalle.dir
