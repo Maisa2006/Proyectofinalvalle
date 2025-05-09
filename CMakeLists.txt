@@ -3,4 +3,6 @@ project(Proyectofinalvalle)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Proyectofinalvalle main.cpp)
+add_executable(Proyectofinalvalle main.cpp
+        Criatura.cpp
+        Criatura.h)
