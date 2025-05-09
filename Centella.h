@@ -1,3 +1,12 @@
+//
+// Created by Maria Isabel on 9/05/2025.
+//
+
+#ifndef CENTELLA_H
+#define CENTELLA_H
+
+
+
 #include <vector>
 #include <string>
 #include <memory>
@@ -22,7 +31,7 @@ public:
         return {{"tipo", "Centella"}, {"nombre", nombre}, {"edad", edad}, {"energia", energia}};
     }
 };
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
+
+
+
+#endif //CENTELLA_H

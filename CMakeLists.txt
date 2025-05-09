@@ -5,4 +5,10 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Proyectofinalvalle main.cpp
         Criatura.cpp
-        Criatura.h)
+        Criatura.h
+        Centella.cpp
+        Centella.h
+        Mapa.cpp
+        Mapa.h
+        Albo.cpp
+        Albo.h)
