@@ -11,4 +11,12 @@ add_executable(Proyectofinalvalle main.cpp
         Mapa.cpp
         Mapa.h
         Albo.cpp
-        Albo.h)
+        Albo.h
+        Nodo.cpp
+        Nodo.h
+        Regenerador.h
+        Volador.h
+        MutanteAlado.h
+        MutanteAlado.cpp
+        Mutante.cpp
+        Mutante.h)
